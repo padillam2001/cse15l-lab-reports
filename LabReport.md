@@ -29,5 +29,38 @@ will have a new git bash terminal:
 
 You are now ready to remote connect to a server!
 
-4)
+________________________________________________
 
+You will now connect to your CSE 15L account:
+
+
+Begin by typing *$ ssh cs15lsp23__@ieng6.ucsd.edu* into your bash terminal (replace the blank spaces with the letter associated with your account).
+
+Upon doing this, you will be requested to enter your password. When you type it in, you will not see the the asterisks you usually see when
+logging into an account. Don't worry, your password *is* being entered.
+
+![image](https://user-images.githubusercontent.com/130111715/231058801-c6356f9f-c7a0-4b31-96b9-4c3a0af97977.png)
+*(Here's an example of what logging in can look like!)
+
+
+Upon entering your password, you will be connected to a computer in the CSE basement!
+
+
+
+________________________________________________
+
+Now let's use some basic Unix commands. Go ahead and enter these:
+
+1) *pwd*
+2) *cd*
+3) *ls
+4) *ls -a*
+5) *ls -lat*
+6) *mkdir*
+7) *cp*
+
+*ls* and its variations will list all the files and folders in your current directory. *pwd* will print your current directory, and *cd* can be used with a path to change your current directory. *mkdir*, short for *"make directory"* allows us to create new directories, by default in the current working directory. Here's an example of what entering some of these commands can look like:
+
+![image](https://user-images.githubusercontent.com/130111715/231058621-061db195-d4be-4247-8ed2-71301f7267fd.png)
+
+![image](https://user-images.githubusercontent.com/130111715/231058659-e6d33d29-8c07-4187-86e3-152cc916d997.png)
