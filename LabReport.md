@@ -33,7 +33,7 @@ ________________________________________________
 You will now connect to your CSE 15L account:
 
 
-Begin by typing *$ ssh cs15lsp23__@ieng6.ucsd.edu* into your bash terminal (replace the blank spaces with the letter associated with your account).
+Begin by typing *$ ssh cs15lsp23__@ieng6.ucsd.edu* into your bash terminal (replace the blank spaces with the letters associated with your account).
 
 Upon doing this, you will be requested to enter your password. When you type it in, you will not see the the asterisks you usually see when
 logging into an account. Don't worry, your password *is* being entered.
