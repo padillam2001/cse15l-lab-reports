@@ -6,7 +6,7 @@ In order to access a remote server through Visual Studio Code, we will follow th
 
 3) Access the server through a bash terminal in VSC.
 
-We will now go through each of these steps in mroe depth:
+We will now go through each of these steps in more depth:
 
 1) 
 Visual Studio Code can be downloaded through this link: https://code.visualstudio.com/download
