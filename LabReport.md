@@ -59,7 +59,7 @@ Now let's use some basic Unix commands. Go ahead and enter these:
 6) *mkdir*
 7) *cp*
 
-*ls* and its variations will list all the files and folders in your current directory. *pwd* will print your current directory, and *cd* can be used with a path to change your current directory. *mkdir*, short for *"make directory"* allows us to create new directories, by default in the current working directory. Here's an example of what entering some of these commands can look like:
+*ls* and its variations will list all the files and folders in your current directory. *pwd* will print your current working directory, and *cd* can be used with a path to change your current directory. *mkdir*, short for *"make directory"* allows us to create new directories, by default in the current working directory. Here's an example of what entering some of these commands can look like:
 
 ![image](https://user-images.githubusercontent.com/130111715/231058621-061db195-d4be-4247-8ed2-71301f7267fd.png)
 
