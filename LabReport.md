@@ -22,8 +22,7 @@ If you are on MacOS, Linux, or any other Unix-based OS, you can skip this step.
 
 3)
 Now, open Visual Studio Code and create a terminal by using *Ctrl* + *Shift* + *`*. You will now set your default terminal to the git bash you installed.
-Open the command palette by clicking *Ctrl* + *Shift* + *P* and select *Git Bash* from the options. Now, simply click the *+* icon in the terminal you
-will have a new git bash terminal:
+Open the command palette by clicking *Ctrl* + *Shift* + *P* and select *Git Bash* from the options. Now, simply click the *+* icon in the terminal. Notice that you are now using a git bash terminal:
 
 
 
