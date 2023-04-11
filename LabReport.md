@@ -53,7 +53,7 @@ Now let's use some basic Unix commands. Go ahead and enter these:
 
 1) *pwd*
 2) *cd*
-3) *ls
+3) *ls*
 4) *ls -a*
 5) *ls -lat*
 6) *mkdir*
