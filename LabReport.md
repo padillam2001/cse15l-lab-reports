@@ -39,7 +39,8 @@ Upon doing this, you will be requested to enter your password. When you type it 
 logging into an account. Don't worry, your password *is* being entered.
 
 ![image](https://user-images.githubusercontent.com/130111715/231058801-c6356f9f-c7a0-4b31-96b9-4c3a0af97977.png)
-*(Here's an example of what logging in can look like!)
+
+(Example)
 
 
 Upon entering your password, you will be connected to a computer in the CSE basement!
