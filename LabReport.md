@@ -21,7 +21,7 @@ Git for Windows can be downloaded through [this link](tps://git-scm.com/download
 If you are on MacOS, Linux, or any other Unix-based OS, you can skip this step.
 
 3)
-Now, open Visual Studio Code and create a terminal by using *Ctrl* + *Shift* + *`*. You will now set your default terminal to the git bash you installed.
+Now, open Visual Studio Code and create a terminal by using `Ctrl` + `Shift` + `'`. You will now set your default terminal to the git bash you installed.
 Open the command palette by clicking *Ctrl* + *Shift* + *P* and select *Git Bash* from the options. Now, simply click the *+* icon in the terminal. Notice that you are now using a git bash terminal:
 
 
@@ -33,7 +33,7 @@ ________________________________________________
 You will now connect to your CSE 15L account:
 
 
-Begin by typing *$ ssh cs15lsp23__@ieng6.ucsd.edu* into your bash terminal (replace the blank spaces with the letters associated with your account).
+Begin by typing `$ ssh cs15lsp23__@ieng6.ucsd.edu` into your bash terminal (replace the blank spaces with the letters associated with your account).
 
 Upon doing this, you will be requested to enter your password. When you type it in, you will not see the the asterisks you usually see when
 logging into an account. Don't worry, your password *is* being entered.
@@ -51,15 +51,15 @@ ________________________________________________
 
 Now let's use some basic Unix commands. Go ahead and enter these:
 
-1) *pwd*
-2) *cd*
-3) *ls*
-4) *ls -a*
-5) *ls -lat*
-6) *mkdir*
-7) *cp*
+1) `pwd`
+2) `cd`
+3) `ls`
+4) `ls -a`
+5) `ls -lat`
+6) `mkdir`
+7) `cp`
 
-*ls* and its variations will list all the files and folders in your current directory. *pwd* will print your current working directory, and *cd* can be used with a path to change your current directory. *mkdir*, short for *"make directory"* allows us to create new directories, by default in the current working directory. Here's an example of what entering some of these commands can look like:
+`ls` and its variations will list all the files and folders in your current directory. *pwd* will print your current working directory, and *cd* can be used with a path to change your current directory. `mkdir`, short for "make directory" allows us to create new directories, by default in the current working directory. Here's an example of what entering some of these commands can look like:
 
 ![image](https://user-images.githubusercontent.com/130111715/231058621-061db195-d4be-4247-8ed2-71301f7267fd.png)
 
