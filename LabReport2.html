@@ -83,6 +83,10 @@ public void reversetestSuccess() {
 assertEquals(numsExp, nums);
 }
 }
+
+Tests:
+
+![image](https://github.com/padillam2001/cse15l-lab-reports/blob/main/scsh3.png)
     
 The problem is that the method is writing over the first half of the array then using that written-over half to determine what will be in the second half of the array. This can be fixed by creating a copy of the input array and using that as the reference:
 
@@ -103,6 +107,7 @@ Before:
       arr[i] = copy[arr.length - i - 1];
     }
   }`
+  
 Part 3:
 
 I learned how to fork a repository from Github and how to use Github desktop to modify a repository. I imagine these things are pretty invaluable when working on a project, let alone with a team.
