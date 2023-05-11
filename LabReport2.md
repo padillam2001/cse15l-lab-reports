@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.net.URI;
 
 
-class Handler implements URLHandler {
+`class Handler implements URLHandler {
     // The one bit of state on the server: a number that will be manipulated by
     // various requests.
     String str = "";
@@ -37,7 +37,7 @@ class StringServer {
         Server.start(port, new Handler());
     }
 }
-
+`
 ![image](https://github.com/padillam2001/cse15l-lab-reports/blob/main/scsh1.png)
 ![image](https://github.com/padillam2001/cse15l-lab-reports/blob/main/scsh2.png)
 
