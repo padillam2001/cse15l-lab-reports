@@ -59,7 +59,7 @@ Part 2:
 
 I choose the reverseInPlace() method in ArrayExamples.java
 
-  @Test
+ ` @Test
   public void reversetestFail() {
 
     int[] nums = new int[3];
@@ -71,7 +71,7 @@ I choose the reverseInPlace() method in ArrayExamples.java
     numsExp[1] = 2;
     numsExp[2] = 1;
     ArrayExamples.reverseInPlace(nums);
-assertEquals(numsExp, nums);
+assertArrayEquals(numsExp, nums);
 }
 
 @Test
@@ -82,9 +82,9 @@ public void reversetestSuccess() {
     nums[0] = 1;
     numsExp[0] = 1;
     ArrayExamples.reverseInPlace(nums);
-assertEquals(numsExp, nums);
+assertArrayEquals(numsExp, nums);
 }
-}
+}`
 
 Tests:
 
