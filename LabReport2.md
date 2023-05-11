@@ -1,15 +1,15 @@
 Code: 
-`import java.io.IOException;
-import java.net.URI;`
+```import java.io.IOException;
+import java.net.URI;
 
 
-`class Handler implements URLHandler {
+class Handler implements URLHandler {
     // The one bit of state on the server: a number that will be manipulated by
     // various requests.
-    String str = "";`
+    String str = "";
 
 
-`    public String handleRequest(URI url) {
+    public String handleRequest(URI url) {
         if (url.getPath().equals("/")) {
             return String.format(str);
         } else if (url.getPath().contains("/add-message")) {
@@ -20,10 +20,10 @@ import java.net.URI;`
             return "404 Not Found!";
         }
     }
-}`
+}
 
 
-`class StringServer {
+class StringServer {
     public static void main(String[] args) throws IOException {
         if(args.length == 0){
             System.out.println("Missing port number! Try any number between 1024 to 49151");
@@ -36,8 +36,8 @@ import java.net.URI;`
 
         Server.start(port, new Handler());
     }
-}`
-
+}
+```
 
 --------------------------------------------------------------------------------
 
@@ -59,7 +59,7 @@ Part 2:
 
 I choose the reverseInPlace() method in ArrayExamples.java
 
- ` @Test
+ ``` @Test
   public void reversetestFail() {
 
     int[] nums = new int[3];
@@ -84,7 +84,7 @@ public void reversetestSuccess() {
     ArrayExamples.reverseInPlace(nums);
 assertArrayEquals(numsExp, nums);
 }
-}`
+}```
 
 Tests:
 
@@ -94,13 +94,13 @@ The problem is that the method is writing over the first half of the array then 
 
 Before:
 
-` static void reverseInPlace(int[] arr) {
+```static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length; i += 1) {
       arr[i] = arr[arr.length - i - 1];
     }
-  }`
+  }
   
-  `After:
+  After:
    static void reverseInPlace(int[] arr) {
     int[] copy = new int[arr.length];
     for(int i = 0; i < arr.length; i += 1) {
@@ -108,7 +108,7 @@ Before:
     for(int i = 0; i < arr.length; i += 1) {
       arr[i] = copy[arr.length - i - 1];
     }
-  }`
+  }```
   
 Part 3:
 
