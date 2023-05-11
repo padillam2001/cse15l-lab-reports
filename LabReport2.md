@@ -37,8 +37,8 @@ import java.net.URI;
         Server.start(port, new Handler());
     }
 }`
-![image](https://github.com/padillam2001/cse15l-lab-reports/blob/main/scsh1.png)
-![image](https://github.com/padillam2001/cse15l-lab-reports/blob/main/scsh2.png)
+![image](https://raw.githubusercontent.com/padillam2001/cse15l-lab-reports/main/scsh1.png)
+![image](https://raw.githubusercontent.com/padillam2001/cse15l-lab-reports/main/scsh2.png)
 
 --------------------------------------------------------------------------------
 
@@ -86,7 +86,7 @@ assertEquals(numsExp, nums);
 
 Tests:
 
-![image](https://github.com/padillam2001/cse15l-lab-reports/blob/main/scsh3.png)
+![image](https://raw.githubusercontent.com/padillam2001/cse15l-lab-reports/main/scsh3.png)
     
 The problem is that the method is writing over the first half of the array then using that written-over half to determine what will be in the second half of the array. This can be fixed by creating a copy of the input array and using that as the reference:
 
