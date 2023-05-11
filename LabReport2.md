@@ -1,6 +1,6 @@
 Code: 
-import java.io.IOException;
-import java.net.URI;
+`import java.io.IOException;
+import java.net.URI;`
 
 
 `class Handler implements URLHandler {
@@ -9,7 +9,7 @@ import java.net.URI;
     String str = "";`
 
 
-    public String handleRequest(URI url) {
+`    public String handleRequest(URI url) {
         if (url.getPath().equals("/")) {
             return String.format(str);
         } else if (url.getPath().contains("/add-message")) {
@@ -20,7 +20,7 @@ import java.net.URI;
             return "404 Not Found!";
         }
     }
-`}`
+}`
 
 
 `class StringServer {
