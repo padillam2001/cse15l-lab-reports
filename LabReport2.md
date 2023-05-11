@@ -41,9 +41,6 @@ import java.net.URI;
 
 --------------------------------------------------------------------------------
 
-![image](https://raw.githubusercontent.com/padillam2001/cse15l-lab-reports/main/scsh1.png)
-![image](https://raw.githubusercontent.com/padillam2001/cse15l-lab-reports/main/scsh2.png)
-
 getPath(), equals(), contains(), getQuery(), split(), and format() are called
 
 Arguments:
@@ -52,6 +49,9 @@ Arguments:
 * split() takes “=” as its argument and is called on the output of getQuery()
 * format() does not take any arguments and is called on the string containing all the input strings
 * contains() takes “/add-message” as its argument and is called on the output of getPath()
+
+![image](https://raw.githubusercontent.com/padillam2001/cse15l-lab-reports/main/scsh1.png)
+![image](https://raw.githubusercontent.com/padillam2001/cse15l-lab-reports/main/scsh2.png)
 
 The value of the str field is changed when the /add-message path is used
 
