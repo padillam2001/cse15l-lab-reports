@@ -37,10 +37,12 @@ import java.net.URI;
         Server.start(port, new Handler());
     }
 }`
-![image](https://raw.githubusercontent.com/padillam2001/cse15l-lab-reports/main/scsh1.png)
-![image](https://raw.githubusercontent.com/padillam2001/cse15l-lab-reports/main/scsh2.png)
+
 
 --------------------------------------------------------------------------------
+
+![image](https://raw.githubusercontent.com/padillam2001/cse15l-lab-reports/main/scsh1.png)
+![image](https://raw.githubusercontent.com/padillam2001/cse15l-lab-reports/main/scsh2.png)
 
 getPath(), equals(), contains(), getQuery(), split(), and format() are called
 
