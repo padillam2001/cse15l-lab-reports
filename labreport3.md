@@ -24,7 +24,7 @@ https://www.makeuseof.com/grep-command-practical-examples/
 
 This can be useful if you do not want to include lines that only have partial matches.
 
-Use 2 - to search for strings without regard for case sensitivity:
+Use 2 - ``-i`` for grep can be used to search for strings without regard for case sensitivity:
 
 Examples:
 
@@ -73,10 +73,9 @@ Outputs:
 This is useful if you want to go to the lines after running grep to read what you found.
 
 
-Use 4 - Find list of all files in directory of a particular extension with “.[extension]”
+Use 4 - With -v, you can invert your search such that you only receive results that *don't* match your input.
 
-https://www.makeuseof.com/grep-command-practical-examples/
-(Source)
+[Source](https://www.oreilly.com/library/view/shell-scripting-expert/9781118166321/c12-anchor-10.xhtml#:~:text=The%20four%20most%20commonly%20used,is%20rather%20useful%20is%20%2De.)
 
 Example 1:
 
