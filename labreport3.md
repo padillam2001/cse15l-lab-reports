@@ -79,10 +79,10 @@ Use 4 - With -v, you can invert your search such that you only receive results t
 
 Example 1:
 
-![image](https://raw.githubusercontent.com/padillam2001/cse15l-lab-reports/main/image11.png)
+![image](https://raw.githubusercontent.com/padillam2001/cse15l-lab-reports/main/image13.png)
 
-Example 2:
+Output:
 
-![image](https://raw.githubusercontent.com/padillam2001/cse15l-lab-reports/main/image12.png)
+![image](https://raw.githubusercontent.com/padillam2001/cse15l-lab-reports/main/image14.png)
 
-This can be useful if you want to get an idea of how much of a particular file type you have. You can use this output to, by counting each of the lines, find out precisely how many you have.
+This can be useful if you want to filter out certain info when performing a search.
