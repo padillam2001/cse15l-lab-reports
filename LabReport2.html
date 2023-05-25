@@ -1,116 +1,86 @@
-Code: 
-```import java.io.IOException;
-import java.net.URI;
+[Source](https://www.makeuseof.com/grep-command-practical-examples/)
+
+Ways to use grep
+
+Use 1 - Finding the exact occurrences of a string:
+This can be done using the -w option with grep.
+
+Example 1:
+
+![image](https://raw.githubusercontent.com/padillam2001/cse15l-lab-reports/main/image1.png)
+
+Output 1:
+
+![image](https://raw.githubusercontent.com/padillam2001/cse15l-lab-reports/main/image2.png)
+
+Example 2:
+
+[Source](https://www.makeuseof.com/grep-command-practical-examples/)
+
+![image](https://raw.githubusercontent.com/padillam2001/cse15l-lab-reports/main/image3.png)
+![image](https://raw.githubusercontent.com/padillam2001/cse15l-lab-reports/main/image4.png)
+
+This can be useful if you do not want to include lines that only have partial matches.
+
+Use 2 - ``-i`` for grep can be used to search for strings without regard for case sensitivity:
+
+Examples:
+
+![image](https://raw.githubusercontent.com/padillam2001/cse15l-lab-reports/main/image5.png)
+
+Outputs:
+
+![image](https://raw.githubusercontent.com/padillam2001/cse15l-lab-reports/main/image6.png)
+![image](https://raw.githubusercontent.com/padillam2001/cse15l-lab-reports/main/image7.png)
+
+This is useful in allowing you to search for key terms without needing to deal with all potential ways it can be capitalized.
+
+Use 3 - Display line numbers along with rest of output with -n
+
+[Source](https://www.makeuseof.com/grep-command-practical-examples/)
+
+For this one, I asked ChatGPT to help me clarify what -n does:
+
+ChatGPT Help:
+
+Q: What does grep -n do?
+
+A: The grep command is a powerful command-line tool used for searching text patterns within files. The -n option is an additional flag that tells grep to display the line numbers in the output along with the lines that match the specified pattern.
+When you use grep -n followed by a pattern and a file or list of files, it searches for the given pattern and returns the matching lines with their corresponding line numbers.
+For example, if you want to search for the pattern "apple" in a file called "fruits.txt" and display the line numbers, you would use the following command:
+perl
+Copy code
+grep -n 'apple' fruits.txt
+If the pattern "apple" is found in the file, the output will show the line number(s) along with the line(s) containing the pattern. If the pattern is not found, there will be no output.
+Keep in mind that the grep command is case-sensitive by default. To perform a case-insensitive search, you can use the -i flag along with the -n flag:
+perl
+Copy code
+grep -n -i 'apple' fruits.txt
 
 
-class Handler implements URLHandler {
-    // The one bit of state on the server: a number that will be manipulated by
-    // various requests.
-    String str = "";
+Examples:
+
+![image](https://raw.githubusercontent.com/padillam2001/cse15l-lab-reports/main/image8.png)
+
+Outputs:
+
+![image](https://raw.githubusercontent.com/padillam2001/cse15l-lab-reports/main/image9.png)
+![image](https://raw.githubusercontent.com/padillam2001/cse15l-lab-reports/main/image10.png)
+
+This is useful if you want to go to the lines after running grep to read what you found.
 
 
-    public String handleRequest(URI url) {
-        if (url.getPath().equals("/")) {
-            return String.format(str);
-        } else if (url.getPath().contains("/add-message")) {
-            String nw = url.getQuery().split("=")[1];
-            str = str + "\n" + nw;
-            return String.format(str);
-        } else {
-            return "404 Not Found!";
-        }
-    }
-}
+Use 4 - With -v, you can invert your search such that you only receive results that *don't* match your input.
 
+[Source](https://www.oreilly.com/library/view/shell-scripting-expert/9781118166321/c12-anchor-10.xhtml#:~:text=The%20four%20most%20commonly%20used,is%20rather%20useful%20is%20%2De.)
 
-class StringServer {
-    public static void main(String[] args) throws IOException {
-        if(args.length == 0){
-            System.out.println("Missing port number! Try any number between 1024 to 49151");
-            return;
-        }
+Example 1:
 
+![image](https://raw.githubusercontent.com/padillam2001/cse15l-lab-reports/main/image13.png)
 
-        int port = Integer.parseInt(args[0]);
+Output:
 
+![image](https://raw.githubusercontent.com/padillam2001/cse15l-lab-reports/main/image14.png)
 
-        Server.start(port, new Handler());
-    }
-}
-```
-
---------------------------------------------------------------------------------
-
-getPath(), equals(), contains(), getQuery(), split(), and format() are called
-
-Arguments:
-* getPath() does not take any arguments and is called on the URL object
-* getQuery() does not take any arguments and is called on the URL object
-* split() takes “=” as its argument and is called on the output of getQuery()
-* format() does not take any arguments and is called on the string containing all the input strings
-* contains() takes “/add-message” as its argument and is called on the output of getPath()
-
-![image](https://raw.githubusercontent.com/padillam2001/cse15l-lab-reports/main/scsh1.png)
-![image](https://raw.githubusercontent.com/padillam2001/cse15l-lab-reports/main/scsh2.png)
-
-The value of the str field is changed when the /add-message path is used
-
-Part 2:
-
-I choose the reverseInPlace() method in ArrayExamples.java
-
- ``` @Test
-  public void reversetestFail() {
-
-    int[] nums = new int[3];
-    int[] numsExp = new int[3];
-    nums[0] = 1;
-    nums[1] = 2;
-    nums[2] = 3;
-    numsExp[0] = 3;
-    numsExp[1] = 2;
-    numsExp[2] = 1;
-    ArrayExamples.reverseInPlace(nums);
-assertArrayEquals(numsExp, nums);
-}
-
-@Test
-public void reversetestSuccess() {
-
-    int[] nums = new int[1];
-    int[] numsExp = new int[1];
-    nums[0] = 1;
-    numsExp[0] = 1;
-    ArrayExamples.reverseInPlace(nums);
-assertArrayEquals(numsExp, nums);
-}
-}```
-
-Tests:
-
-![image](https://raw.githubusercontent.com/padillam2001/cse15l-lab-reports/main/scsh3.png)
-    
-The problem is that the method is writing over the first half of the array then using that written-over half to determine what will be in the second half of the array. This can be fixed by creating a copy of the input array and using that as the reference:
-
-Before:
-
-```static void reverseInPlace(int[] arr) {
-    for(int i = 0; i < arr.length; i += 1) {
-      arr[i] = arr[arr.length - i - 1];
-    }
-  }
-  
-  After:
-   static void reverseInPlace(int[] arr) {
-    int[] copy = new int[arr.length];
-    for(int i = 0; i < arr.length; i += 1) {
-    copy[i] = arr[i];}
-    for(int i = 0; i < arr.length; i += 1) {
-      arr[i] = copy[arr.length - i - 1];
-    }
-  }```
-  
-Part 3:
-
-I learned how to fork a repository from Github and how to use Github desktop to modify a repository. I imagine these things are pretty invaluable when working on a project, let alone with a team.
+This can be useful if you want to filter out certain info when performing a search.
 
