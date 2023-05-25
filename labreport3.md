@@ -1,5 +1,4 @@
-https://www.makeuseof.com/grep-command-practical-examples/
-(Source)
+[Source](https://www.makeuseof.com/grep-command-practical-examples/)
 
 Ways to use grep
 
