@@ -17,3 +17,43 @@ Detail the failure-inducing input and context. That might mean any or all of the
 * I'm running this command, which induces the failing input: $  bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected
 * The command will run my script, which clones the linked repository onto my computer and runs jUnit tests on it. I do not have any previous commands to give. My working directory is: /c/Users/padil/Desktop/list-examples-grader-2/list-examples-grader-main
 * Below, I provide screenhots of my directory structure and my script:
+
+```CPATH='/c/Users/padil/Desktop/list-examples-grader-2/list-examples-grader-main/./:/c/Users/padil/Desktop/list-examples-grader-2/list-examples-grader-main/lib/junit-4.13.2.jar:/c/Users/padil/Desktop/list-examples-grader-2/list-examples-grader-main/lib/hamcrest-core-1.3.jar'
+
+rm -rf student-submission
+rm -rf grading-area
+
+mkdir grading-area
+
+git clone $1 student-submission
+echo 'Finished cloning'
+
+cd student-submission
+
+file="ListExamples.java"
+
+if [ -f "$file" ]
+then 
+echo "$file exists"
+else 
+echo "$file could not be found. Please check your submission for any missing files and resubmit."
+exit
+fi
+
+cp *.java ../grading-area
+cd ../grading-area
+
+
+javac -cp $CPATH *.java
+
+
+output=$(java -cp $CPATH org.junit.runner.JUnitCore TestListExamples)
+
+#When writing line 35, I asked ChatGPT for some tips on how to isolate a character from the terminal. The discussion can be found in the file "chat.txt"
+
+passed_tests=$(echo "$output" | grep 'OK' | tr -dc '0-9')
+
+
+echo "Grade: $passed_tests / 4"
+```
+
