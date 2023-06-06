@@ -9,6 +9,7 @@
 * In my script, after running the tests, I try to catch the number of successes through this line of code: `passed_tests=$(echo "$output" | grep 'OK' | tr -dc '0-9')`. Unfortunately, when I run the script, the number of passed tests turns up blank. Screenshots provided below:
 
 ![image](https://raw.githubusercontent.com/padillam2001/cse15l-lab-reports/main/screenshotreport1.png)
+*Note, in this screenshot it is mentioned that ChatGPT was used to assist in writing some of the script. For the log of that conversation, see the bottom of the submission.*
 
 **Detail the failure-inducing input and context. That might mean any or all of the command you're running, a test case, command-line arguments, working directory, even the last few commands you ran. Do your best to provide as much context as you can.**
 
