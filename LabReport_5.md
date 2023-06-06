@@ -6,7 +6,7 @@
 
 **Detail the symptom you're seeing. Be specific; include both what you're seeing and what you expected to see instead. Screenshots are great, copy-pasted terminal output is also great. Avoid saying “it doesn't work”.**
 
-* In my script, after running the tests, I try to catch the number of successes through this line of code: passed_tests=$(echo "$output" | grep 'OK' | tr -dc '0-9'). Unfortunately, when I run the script, the number of passed tests turns up blank. Screenshots provided below:
+* In my script, after running the tests, I try to catch the number of successes through this line of code: `passed_tests=$(echo "$output" | grep 'OK' | tr -dc '0-9')`. Unfortunately, when I run the script, the number of passed tests turns up blank. Screenshots provided below:
 
 ![image](https://raw.githubusercontent.com/padillam2001/cse15l-lab-reports/main/screenshotreport1.png)
 
@@ -114,8 +114,8 @@ echo "Grade: $passed_tests / 4"
 ```
 
 Server.java Before Fix:
-
-```// A simple web server using Java's built-in HttpServer
+```
+// A simple web server using Java's built-in HttpServer
 
 // Examples from https://dzone.com/articles/simple-http-server-in-java were useful references
 
@@ -171,8 +171,8 @@ public class Server {
 ```
 
 TestListExamples.java Before Fix:
-
-```import static org.junit.Assert.*;
+```
+import static org.junit.Assert.*;
 import org.junit.*;
 import java.util.Arrays;
 import java.util.List;
@@ -291,6 +291,7 @@ class ExecExamples {
 Cloned Repository Before Fix:
 
 ```
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -344,8 +345,7 @@ class ListExamples {
 
 script.sh After Fix:
 
-```
-CPATH='/c/Users/padil/Desktop/list-examples-grader-2/list-examples-grader-main/./:/c/Users/padil/Desktop/list-examples-grader-2/list-examples-grader-main/lib/junit-4.13.2.jar:/c/Users/padil/Desktop/list-examples-grader-2/list-examples-grader-main/lib/hamcrest-core-1.3.jar'
+```CPATH='/c/Users/padil/Desktop/list-examples-grader-2/list-examples-grader-main/./:/c/Users/padil/Desktop/list-examples-grader-2/list-examples-grader-main/lib/junit-4.13.2.jar:/c/Users/padil/Desktop/list-examples-grader-2/list-examples-grader-main/lib/hamcrest-core-1.3.jar'
 
 rm -rf student-submission
 rm -rf grading-area
@@ -406,3 +406,67 @@ Commands Ran to Trigger the Bug:
 **Reflection:**
 
 * A cool thing I've learned in lab recently has to be using VIM. I never knew you could edit code from the terminal!
+
+
+
+**ChatGPT:**
+
+When writing the script, I used ChatGPT to ask a couple of questions. The conversation is posted below:
+
+Me: What are bash commands I can use to isolate a specific character outputted to the terminal?
+
+ChatGPT: Isolating a specific character outputted to the terminal can be achieved using a variety of Bash commands and utilities. The commands used may differ based on your exact requirements. Below are a few examples.
+
+1. **grep:** This is a very powerful command used for pattern searching and filtering. Here's an example usage:
+   ```bash
+   echo "Hello, World!" | grep -o 'H'
+   ```
+   This will output only 'H', the character you specified.
+
+2. **cut:** This command is used to cut out sections from each line of input - usually fields or columns. To isolate a specific character at a specific position you can use it as follows:
+   ```bash
+   echo "Hello, World!" | cut -c1
+   ```
+   This will output 'H', the character at the first position.
+
+3. **awk:** `awk` is another powerful utility for text processing. To isolate a specific character, you can use something like:
+   ```bash
+   echo "Hello, World!" | awk '{print substr($0,1,1)}'
+   ```
+   This will print 'H', the character at the first position.
+
+4. **sed:** This is a stream editor for filtering and transforming text. Here's how you can use it:
+   ```bash
+   echo "Hello, World!" | sed 's/\(.\).*/\1/'
+   ```
+   This will output 'H', the first character.
+
+Remember that indexing in most Unix utilities is 1-based, not 0-based. This means that the first character is at position 1, not 0.
+
+These commands print the first character of a line. If you need a character at a different position, just replace the position number in the command.
+
+Me: What about tr?
+
+ChatGPT: The `tr` command in Unix/Linux is used for translating or deleting characters. It can be used to convert a character into another, squeeze repeating characters, or delete characters, but it doesn't have the capability to isolate and print specific characters like `cut`, `grep`, `awk`, or `sed`.
+
+However, you can use `tr` for tasks like these:
+
+1. Convert all lowercase letters to uppercase:
+
+    ```bash
+    echo "Hello, World!" | tr 'a-z' 'A-Z'
+    ```
+
+2. Delete specific characters:
+
+    ```bash
+    echo "Hello, World!" | tr -d ','
+    ```
+
+3. Replace all occurrences of a character:
+
+    ```bash
+    echo "Hello, World!" | tr 'o' 'a'
+    ```
+
+So, while `tr` is extremely useful in a lot of scenarios, isolating a specific character isn't one of its functionalities.
