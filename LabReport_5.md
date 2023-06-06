@@ -64,7 +64,7 @@ echo "Grade: $passed_tests / 4"
 
 **Console After Following Advice:**
 
-![image](https://raw.githubusercontent.com/padillam2001/cse15l-lab-reports/main/Consoleadd.png)
+![image](https://raw.githubusercontent.com/padillam2001/cse15l-lab-reports/main/outputafteradvice.png)
 
 * It becomes evident after adding `echo $output` to the script that the jUnit output is not always in the format of OK(n) where n is the number of tests passed. Because of this, if a test fails, `passed_tests=$(echo "$output" | grep 'OK' | tr -dc '0-9')` will not catch the number of successes, which is why `passed_tests` is empty.
 
@@ -393,7 +393,7 @@ else
     fi
 fi
 
-echo "Grade: $passed_tests / 4"
+
 ```
 
 In order to fix the bug, we must take into account that JUnit outputs to the console are not always the same. We look to the format for tests failed, and we see that it takes the form `Tests run: 1, Failures: 1`. We simple create a new `$failed_tests` variable to catch the result given this output and add an if-statement structure where, if `$passed_tests` is empty and `$failed_tests` isn't, we return the number of tests failed.
