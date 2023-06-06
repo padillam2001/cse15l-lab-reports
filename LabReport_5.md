@@ -390,4 +390,14 @@ fi
 echo "Grade: $passed_tests / 4"
 ```
 
-In order to fix the bug, we must take into account that JUnit outputs to the console are not always the same. We look to the format for tests failed, and we see that it takes the form `Tests run: 1, Failures: 1`. We simple create a new `$failed_tests` variable to catch the result given this output and add an if-statement structure where, if passed_tests is empty and failed_tests isn't, we return the number of tests failed.
+In order to fix the bug, we must take into account that JUnit outputs to the console are not always the same. We look to the format for tests failed, and we see that it takes the form `Tests run: 1, Failures: 1`. We simple create a new `$failed_tests` variable to catch the result given this output and add an if-statement structure where, if `$passed_tests` is empty and `$failed_tests` isn't, we return the number of tests failed.
+
+Commands Ran to Trigger the Bug:
+
+![image](https://raw.githubusercontent.com/padillam2001/cse15l-lab-reports/main/screenshotreport1.png)
+
+
+
+**Reflection:**
+
+* A cool thing I've learned in lab recently has to be using VIM. I never knew you could edit code from the terminal!
