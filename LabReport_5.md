@@ -1,5 +1,3 @@
-[Source](https://www.makeuseof.com/grep-command-practical-examples/)
-
 **Student**
 
 **What environment are you using (computer, operating system, web browser, terminal/editor, and so on)?**
