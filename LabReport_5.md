@@ -13,7 +13,7 @@
 
 **Detail the failure-inducing input and context. That might mean any or all of the command you're running, a test case, command-line arguments, working directory, even the last few commands you ran. Do your best to provide as much context as you can.**
 
-* I'm running this command, which induces the failing input: $  bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected
+* I'm running this command, which induces the failing input: `$  bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected`
 * The command will run my script, which clones the linked repository onto my computer and runs jUnit tests on it. I do not have any previous commands to give. My working directory is: /c/Users/padil/Desktop/list-examples-grader-2/list-examples-grader-main
 * Below, I provide screenhots of my directory structure and my script:
 
