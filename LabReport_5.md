@@ -114,6 +114,7 @@ echo "Grade: $passed_tests / 4"
 ```
 
 Server.java Before Fix:
+
 ```// A simple web server using Java's built-in HttpServer
 
 // Examples from https://dzone.com/articles/simple-http-server-in-java were useful references
@@ -170,6 +171,7 @@ public class Server {
 ```
 
 TestListExamples.java Before Fix:
+
 ```import static org.junit.Assert.*;
 import org.junit.*;
 import java.util.Arrays;
@@ -194,7 +196,9 @@ public class TestListExamples {
 ```
 
 GradeServer.java Before Fix:
-```import java.io.BufferedReader;
+
+```
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -285,7 +289,9 @@ class ExecExamples {
 ```
 
 Cloned Repository Before Fix:
-```import java.util.ArrayList;
+
+```
+import java.util.ArrayList;
 import java.util.List;
 
 interface StringChecker { boolean checkString(String s); }
@@ -338,7 +344,8 @@ class ListExamples {
 
 script.sh After Fix:
 
-```CPATH='/c/Users/padil/Desktop/list-examples-grader-2/list-examples-grader-main/./:/c/Users/padil/Desktop/list-examples-grader-2/list-examples-grader-main/lib/junit-4.13.2.jar:/c/Users/padil/Desktop/list-examples-grader-2/list-examples-grader-main/lib/hamcrest-core-1.3.jar'
+```
+CPATH='/c/Users/padil/Desktop/list-examples-grader-2/list-examples-grader-main/./:/c/Users/padil/Desktop/list-examples-grader-2/list-examples-grader-main/lib/junit-4.13.2.jar:/c/Users/padil/Desktop/list-examples-grader-2/list-examples-grader-main/lib/hamcrest-core-1.3.jar'
 
 rm -rf student-submission
 rm -rf grading-area
