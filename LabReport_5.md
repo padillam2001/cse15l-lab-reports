@@ -57,3 +57,4 @@ passed_tests=$(echo "$output" | grep 'OK' | tr -dc '0-9')
 echo "Grade: $passed_tests / 4"
 ```
 
+![image](https://raw.githubusercontent.com/padillam2001/cse15l-lab-reports/main/directory_structure.png)
