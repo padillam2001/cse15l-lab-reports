@@ -62,3 +62,7 @@ echo "Grade: $passed_tests / 4"
 **TA, Response:**
 
 * Hmm, have you tried to see what is stored in $output in different cases? Check this, and think about why your results are blank.
+
+**Console After Following Advice:**
+
+* It becomes evident after adding `echo $output` to the script that the jUnit output is not always in the format of OK(n) where n is the number of tests passed. Because of this, if a test fails, `passed_tests=$(echo "$output" | grep 'OK' | tr -dc '0-9')` will not catch the number of successes, which is why `passed_tests` is empty.
