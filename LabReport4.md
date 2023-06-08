@@ -1,7 +1,7 @@
-Step 4: ssh cs15;sp23mp@ieng6.ucsd.edu <Enter> <Password> <Enter> (This logs me in to the ieng6 server)
+Step 4: `ssh cs15;sp23mp@ieng6.ucsd.edu` `<Enter>` `<Password>` `<Enter>` (This logs me in to the ieng6 server)
 ![image](https://raw.githubusercontent.com/padillam2001/cse15l-lab-reports/main/screen1.png)
   
-Step 5: git clone https://github.com/padillam2001/lab7/ <Enter> (This clones the repository into my ieng6 account)
+Step 5: `git clone git@github.com:padillam2001/lab7.git` `<Enter>` (This clones the repository into my ieng6 account)
  ![image](https://raw.githubusercontent.com/padillam2001/cse15l-lab-reports/main/lab7scsht.png)
   
 Step 6: `ls <Enter>` (This allows me to check where I am)
@@ -19,7 +19,7 @@ Step 7: `vim ListExamples.jav`a (This allows me to use vim to fix the file ListE
 `<Esc>` (Exits insert mode)
 `:wq! <Enter>` (Saves changes)
 
-Step 8: <Up> x 2 <Enter> (goes up to previous command and runs bash.sh again)
+Step 8: `<Up>` x 2 <Enter> (goes up to previous command and runs bash.sh again)
 ![image](https://raw.githubusercontent.com/padillam2001/cse15l-lab-reports/main/screen8.png)
  
 Step 9: `git add .` `<Enter>` `git commit -m 'modification'` `<Enter>` (This commits the changes to the repository, with the message ‘modification’)
