@@ -16,6 +16,7 @@ Step 6: `ls <Enter>` (This allows me to check where I am)
 Step 7: `vim ListExamples.jav`a (This allows me to use vim to fix the file ListExamples.java)
 
 ![image](https://raw.githubusercontent.com/padillam2001/cse15l-lab-reports/main/screen7.png)
+
 `<Up>` x 6 `<Right>` x 11 (These get me to the right line and character)
 `x` (This deletes the highlighted character)
 `i` (Changes vim to insert mode)
