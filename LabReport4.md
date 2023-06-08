@@ -30,9 +30,9 @@ Step 8: `<Up>` x 2 <Enter> (goes up to previous command and runs bash.sh again)
  
 Step 9:
 `git add .`
-`<Enter>`
+`<Enter>` x 1
 `git commit -m 'modification'`
-`<Enter>`
+`<Enter>` x 1
 (This commits the changes to the repository, with the message ‘modification’)
   
 ![image](https://raw.githubusercontent.com/padillam2001/cse15l-lab-reports/main/gitcommit.png)
